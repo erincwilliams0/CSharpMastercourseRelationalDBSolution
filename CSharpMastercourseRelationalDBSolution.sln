@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36327.8 d17.14
+VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerUI", "SQLServerUI\SQLServerUI.csproj", "{3DBE20C1-4E3A-4CC0-9796-AD716DD607D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{AEB0C3F8-5CAC-47D5-A081-7FC0347B7569}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQLContactsDB", "SQLContactsDB\SQLContactsDB.sqlproj", "{FE868F34-8960-4D9D-A98A-9E8DD9D68083}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,12 @@ Global
 		{AEB0C3F8-5CAC-47D5-A081-7FC0347B7569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB0C3F8-5CAC-47D5-A081-7FC0347B7569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEB0C3F8-5CAC-47D5-A081-7FC0347B7569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
