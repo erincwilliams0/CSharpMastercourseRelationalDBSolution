@@ -13,7 +13,29 @@ class Program
         //ReadAllContacts(sql);
         //ReadAllContact(sql, 1);
 
+        CreateNewContact(sql);
+        Console.WriteLine("Created Contact!");
+
         Console.ReadLine();
+    }
+    private static void CreateNewContact(SqlCrud sql)
+    {
+        FullContactModel user = new FullContactModel
+        {
+            BasicInfo = new BasicContactModel
+            {
+                FirstName = "Lilly",
+                LastName = "Pittman"
+            }
+        };
+
+        user.EmailAddresses.Add(new EmailAddressModel { EmailAddress = "Lilly@email.com" });
+        user.EmailAddresses.Add(new EmailAddressModel { Id = 2, EmailAddress = "me@email.com" });
+
+        user.PhoneNumbers.Add(new PhoneNumberModel { Id = 1, PhoneNumber = "555-1212" });
+        user.PhoneNumbers.Add(new PhoneNumberModel { PhoneNumber = "555-1616" });
+
+        sql.CreateContact(user);
     }
 
     private static void ReadAllContacts(SqlCrud sql)
