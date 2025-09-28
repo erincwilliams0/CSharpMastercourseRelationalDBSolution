@@ -1,14 +1,36 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
+using DataAccessLibrary;
+using DataAccessLibrary.Models;
 
 namespace SQLServerUI;
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(GetConnectionString());
+        SqlCrud sql = new SqlCrud(GetConnectionString());
+
+        //ReadAllContacts(sql);
+        //ReadAllContact(sql, 1);
 
         Console.ReadLine();
+    }
+
+    private static void ReadAllContacts(SqlCrud sql)
+    {
+        var rows = sql.GetAllContacts();
+
+        foreach (var row in rows)
+        {
+            Console.WriteLine($"{row.Id}: {row.FirstName} {row.LastName}");
+        }
+    }
+
+    private static void ReadContact(SqlCrud sql, int contactId)
+    {
+        var contact = sql.GetFullContactById(contactId);
+
+        Console.WriteLine($"{contact.BasicInfo.Id}: {contact.BasicInfo.FirstName} {contact.BasicInfo.LastName}");
     }
     private static string GetConnectionString(string connectionStringName = "Default")
     {
