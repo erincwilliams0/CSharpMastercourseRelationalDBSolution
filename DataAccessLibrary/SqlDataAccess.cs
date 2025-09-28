@@ -19,5 +19,13 @@ namespace DataAccessLibrary
                 return rows;
             }
         }
+
+        public void SaveData<T>(string sqlStatement, T parameters, string connectionString)
+        {
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Execute(sqlStatement, parameters);
+            }
+        }
     }
 }
