@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLibrary", "DataAc
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQLContactsDB", "SQLContactsDB\SQLContactsDB.sqlproj", "{FE868F34-8960-4D9D-A98A-9E8DD9D68083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqliteUI", "SqliteUI\SqliteUI.csproj", "{1098D682-8E34-404B-8CBB-0DF3F66359B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE868F34-8960-4D9D-A98A-9E8DD9D68083}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1098D682-8E34-404B-8CBB-0DF3F66359B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1098D682-8E34-404B-8CBB-0DF3F66359B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1098D682-8E34-404B-8CBB-0DF3F66359B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1098D682-8E34-404B-8CBB-0DF3F66359B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
