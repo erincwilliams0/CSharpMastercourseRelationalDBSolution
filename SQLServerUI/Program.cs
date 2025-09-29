@@ -11,13 +11,38 @@ class Program
         SqlCrud sql = new SqlCrud(GetConnectionString());
 
         //ReadAllContacts(sql);
-        //ReadAllContact(sql, 1);
+        //ReadContact(sql, 1);
 
-        CreateNewContact(sql);
-        Console.WriteLine("Created Contact!");
+        //CreateNewContact(sql);
+        //Console.WriteLine("Created Contact!");
+
+        //UpdateContact(sql);
+        //ReadContact(sql, 1);
+
+        RemovePhoneNumberFromContact(sql, 1, 1);
+        Console.WriteLine("Done Processing");
+
 
         Console.ReadLine();
     }
+
+    private static void RemovePhoneNumberFromContact(SqlCrud sql, int contactId, int phoneNumberId)
+    {
+        sql.RemovePhoneNumberFromContact(contactId, phoneNumberId);
+    }
+
+    private static void UpdateContact(SqlCrud sql)
+    {
+        BasicContactModel contact = new BasicContactModel
+        {
+            Id = 1,
+            FirstName = "Erin",
+            LastName = "Williams",
+        };
+         
+        sql.UpdateContactName(contact);
+    }
+
     private static void CreateNewContact(SqlCrud sql)
     {
         FullContactModel user = new FullContactModel
