@@ -66,7 +66,7 @@ namespace DataAccessLibrary
 
             // Get ID number of the contact
             sql = "select Id from Contacts " +
-                "where FirstName = @Firstname " +
+                "where FirstName = @FirstName " +
                 "and LastName = @LastName;";
             int contactId = db.LoadData<IdLookupModel, dynamic>(
                 sql,
