@@ -20,7 +20,7 @@ class Program
         //ReadContact(sql, 1);
 
         RemovePhoneNumberFromContact(sql, 1, 1);
-        Console.WriteLine("Done Processing");
+        Console.WriteLine("Done Processing Sql Server");
 
 
         Console.ReadLine();
