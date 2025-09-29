@@ -50,7 +50,7 @@ class Program
             BasicInfo = new BasicContactModel
             {
                 FirstName = "Lilly",
-                LastName = "Pittman"
+                LastName = "Milly"
             }
         };
 
